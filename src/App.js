@@ -1,30 +1,16 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import ProfileCard from './ProfileCard'
 
 function App() {
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>React Starter Project</h1>
-      <div className="card">
-        <p>
-          Edit <code>src/App.js</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  );
-}
+    return (
+        <div>
+            <div>Personal Digital Assistants</div>
+
+            <ProfileCard title="Alexa" handle="@alex99" />
+            <ProfileCard title="Cortana" handle="@cortan32" />
+            <ProfileCard title="Siri" handle="@siri01" />
+
+        </div>
+    );
+};
 
 export default App;
